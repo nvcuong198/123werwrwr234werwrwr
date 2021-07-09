@@ -23,8 +23,8 @@
 
 									<div class='form-group inline-block form-inline label-width '>
 										<label style="text-align: center;"><b>CÔNG TY XÂY DỰNG CÔNG NGHIỆP MỎ </b></label>
-										<label style="text-align: center;"><b>BAN CHỈ ĐẠO PHÒNG CHỐNG COVID-19</b></label>
-										<label style="text-align: center;"><b>-------------------</b></label>
+										<label style="text-align: center;"><b>BAN CHỈ ĐẠO PHÒNG CHỐNG COVID-19 </b></label>
+										<label style="text-align: center;"><b> ------------</b></label>
 									</div>
 
 								</div>
@@ -222,7 +222,7 @@
             <table class='table table-bordered tableData2'>
                 <thead>
                     <tr>
-                        <th scope='col'>Yếu tố phơi nhiễm: Trong vòng 21 ngày qua:</th>
+                        <th scope='col'>Yếu tố phơi nhiễm: Trong vòng 14 ngày qua:</th>
 
                         <th class='text-center' scope='col' style='width:100px;'>Có</th>
                         <th class='text-center' scope='col' style='width:100px;'>Không</th>
@@ -518,7 +518,19 @@
         </div>
     </div>
 	  <div class='mb-20'><b>Kê khai hành trình</b></div>
-	  <div class='lichtrinh'>
+	   <div style='color:red;'>Chú ý: Các đồng chí ở nội trú, không ra khỏi đơn vị tích "Nội trú", không phải kê khai bảng hành trình; các đồng chí ở ngoại trú, nghỉ tranh thủ, nghỉ phép, nghỉ việc riêng, đi công tác, ở nội trú nhưng đi ra khởi đơn vị có việc thì tích vào ô "Ngoại trú" và thực hiện kê khai hành trình</div>
+	                     <br>
+						 <td>Đồng chí thuộc đối tượng:  <span class='text-required'>(*)</span>
+
+                        <label for='noingoaitru'/>
+                    </td>
+                    <td class='text-center'>
+                        <input class='style-radio' name='noingoaitru' type='Radio' value='Nội trú'/> Nội trú không ra khởi đơn vị
+                    </td>
+                    <td class='text-center'>
+                        <input checked='' class='style-radio' name='noingoaitru' type='Radio' value='Ngoại trú'/> Ngoại trú, nghỉ phép, nghỉ tranh thủ, nghỉ việc riêng, ... đi ra khởi đơn vị.
+                    </td>
+	 <div class='lichtrinh'>
 			<div class='mb-20'>Lịch trình thứ 1</div>
 			  <div class='row '>
 						<div class='col-md-4 col-sm-4  col-xs-12 '>
@@ -765,57 +777,7 @@
 		</div>
 		</div>
 		
-		<div class='lichtrinh' >
-		  <div class='mb-20'>Lịch trình thứ 6</div>
-		  <div class='row '>
-					<div class='col-md-4 col-sm-4  col-xs-12 '>
-						<div class='form-group  '>
-							<label>Tỉnh thành <em style='line-height: 1'>(*)</em>
-							</label>
-							<select class="form-control select2-hidden-accessible" id="province6"  style='width: 100%' name="hanhtrinh6_tinh" onchange="changeFunc6();">
-							<option value="" selected>----</option>
-							</select>
-						</div>
-					</div>
-					
-				<div class='col-md-4 col-sm-4  col-xs-12 '>
-					<div class='form-group  '>
-						<label>Quận / huyện <em style='line-height: 1'>(*)</em>
-						</label>
-						<select class="form-control select2-hidden-accessible" id="district6"  style='width: 100%' name="hanhtrinh6_huyen" onchange="changFuncDistrict6();">
-						<option value="" selected>----</option>
-						</select>
-					</div>
-				</div>
-				<div class='col-md-4 col-sm-4  col-xs-12 '>
-					<div class='form-group  '>
-						<label>Phường / xã <em style='line-height: 1'>(*)</em>
-						</label>
-						<select class="form-control select2-hidden-accessible" id="ward6"  style='width: 100%' name="hanhtrinh6_xa" >
-						<option value="" selected>----</option>
-						</select>
-					</div>
-				</div>
-		</div>
-		<div class='row '>
-		<div class='col-md-4  col-xs-12 '>
-				<div class='form-group  '>
-					<label>Thời gian <em style='line-height: 1'>(*)</em>
-					</label>
-					<input class='form-control' name='hanhtrinh6_thoigian' type='date' value=''/>
-				</div>
-			</div>
-			<div class='col-md-8  col-xs-12 '>
-				<div class='form-group  '>
-					<label>Nội dung <em style='line-height: 1'>(*)</em>
-					</label>
-					<input class='form-control' name='hanhtrinh6_noidung' placeholder='Địa điểm đến, đối tượng tiếp xúc, phương tiện di chuyển' type='text' value=''/>
-				</div>
-			</div>
-		</div>
-		</div>
-		
-			  
+	<div style="text-align:center;color: #015ab4;">Trường hợp khẩn cấp, liên hệ Quân y Đơn vị (Đ/c Phòng - 0364.215.263)</div>			  
 <div class='agreeWrapper 456'>  <div class='label-agree'>Tôi xin cam kết những thông tin trên là đúng sự thật, nếu sai tôi xin hoàn toàn chịu trách nhiệm trước chỉ huy đơn vị và pháp luật của Nhà nước./.
 </div>
 </div>
@@ -853,7 +815,6 @@
 			province3.innerHTML = str;
 			province4.innerHTML = str;
 			province5.innerHTML = str;
-			province6.innerHTML = str;
 			}
 		});
 	}
@@ -1242,9 +1203,9 @@ function changFuncDistrict6(){
                           { 
                   if(data == 'false') 
                           {
-                             alert('Khai báo y tế không thành công');
+                             alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
                           }else{
-                             alert('Đã khai báo y tế thành công!');
+                             alert('Đã thêm dữ liệu vào Form');
                           }
                }
     });
