@@ -525,12 +525,12 @@
                         <label for='noingoaitru'/>
                     </td>
                     <td class='text-center'>
-                        <input class='style-radio' name='noingoaitru' type='Radio' value='Nội trú'/> Nội trú không ra khởi đơn vị
+                        <input class='style-radio' name='noingoaitru' type='Radio' value='Nội trú' onclick='change_lichtrinhnoitru()'/> Nội trú không ra khởi đơn vị
                     </td>
                     <td class='text-center'>
-                        <input checked='' class='style-radio' name='noingoaitru' type='Radio' value='Ngoại trú'/> Ngoại trú, nghỉ phép, nghỉ tranh thủ, nghỉ việc riêng, ... đi ra khởi đơn vị.
+                        <input checked='' class='style-radio' name='noingoaitru' type='Radio' value='Ngoại trú' onclick='change_lichtrinhngoaitru()'/> Ngoại trú, nghỉ phép, nghỉ tranh thủ, nghỉ việc riêng, ... đi ra khởi đơn vị.
                     </td>
-	 <div class='lichtrinh'>
+	 <div class='lichtrinh' id = 'lichtrinh'>
 			<div class='mb-20'>Lịch trình thứ 1</div>
 			  <div class='row '>
 						<div class='col-md-4 col-sm-4  col-xs-12 '>
@@ -579,7 +579,7 @@
 				</div>
 			</div>
 		</div>
-		<div class = 'lichtrinh'>
+		<div class = 'lichtrinh' id = 'lichtrinh1'>
 			  <div class='mb-20'>Lịch trình thứ 2</div>
 			  <div class='row '>
 						<div class='col-md-4 col-sm-4  col-xs-12 '>
@@ -628,7 +628,7 @@
 				</div>
 			</div>
 		</div>
-		<div class = 'lichtrinh'>
+		<div class = 'lichtrinh'id = 'lichtrinh3'>
 		  <div class='mb-20'>Lịch trình thứ 3</div>
 		  <div class='row '>
 					<div class='col-md-4 col-sm-4  col-xs-12 '>
@@ -677,7 +677,7 @@
 			</div>
 		</div>
 		</div>
-		<div class ='lichtrinh'>
+		<div class ='lichtrinh'id = 'lichtrinh4'>
 		  <div class='mb-20'>Lịch trình thứ 4</div>
 		  <div class='row '>
 					<div class='col-md-4 col-sm-4  col-xs-12 '>
@@ -727,7 +727,7 @@
 		</div>
 		</div>
 		
-		<div class ='lichtrinh'>
+		<div class ='lichtrinh' id = 'lichtrinh5'>
 		  <div class='mb-20'>Lịch trình thứ 5</div>
 		  <div class='row '>
 					<div class='col-md-4 col-sm-4  col-xs-12 '>
@@ -776,8 +776,9 @@
 			</div>
 		</div>
 		</div>
-		
+		<div><br> </div>
 	<div style="text-align:center;color: #015ab4;">Trường hợp khẩn cấp, liên hệ Quân y Đơn vị (Đ/c Phòng - 0904.352.467)</div>			  
+
 <div class='agreeWrapper 456'>  <div class='label-agree'>Tôi xin cam kết những thông tin trên là đúng sự thật, nếu sai tôi xin hoàn toàn chịu trách nhiệm trước chỉ huy đơn vị và pháp luật của Nhà nước./.
 </div>
 </div>
@@ -1183,7 +1184,23 @@ function changFuncDistrict6(){
 			}
 		});
 	};
-
+function change_lichtrinhnoitru(){
+	document.getElementById('lichtrinh').style.display = 'none';
+	document.getElementById('lichtrinh1').style.display = 'none';
+	document.getElementById('lichtrinh3').style.display = 'none';
+	document.getElementById('lichtrinh4').style.display = 'none';
+	document.getElementById('lichtrinh5').style.display = 'none';
+}
+function change_lichtrinhngoaitru(){
+	document.getElementById('lichtrinh').style.display = 'block';
+	document.getElementById('lichtrinh1').style.display = 'block';
+	document.getElementById('lichtrinh3').style.display = 'block';
+	document.getElementById('lichtrinh4').style.display = 'block';
+	document.getElementById('lichtrinh5').style.display = 'block';
+	
+	
+	
+}
 		</script>
 		
 <script type="text/javascript">
