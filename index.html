@@ -60,7 +60,7 @@
 								<div class='form-group inline-block form-inline label-width '>
 									<label>Họ và tên: <em style='line-height: 1'>(*)</em>
 									</label>
-									<input class='form-control' name='hovaten' placeholder='Vui lòng điền Họ và tên IN HOA' type='text' value=''> </input>
+									<input class='form-control' id='hovaten' name='hovaten' placeholder='Vui lòng điền Họ và tên IN HOA' type='text' value=''> </input>
 								</div>
 
 							</div>
@@ -68,7 +68,7 @@
 								<div class='form-group inline-block form-inline label-width '>
 									<label>Bộ phận: <em style='line-height: 1'>(*)</em>
 									</label>
-									<select class='form-control'  id='input46550' name='bophan'>
+									<select class='form-control'  id='bophan' name='bophan'>
 
 										<option value=''>-Chọn-</option>
 
@@ -120,7 +120,7 @@
 										<label>Năm sinh: <em style='line-height: 1'>(*)</em>
 										</label>
 
-										<select class='form-control' name='tuoinv'>
+										<select class='form-control' id='namsinh' name='namsinh'>
 
 										<option value=''>-Chọn-</option>
 										<option value='1963'>1963</option>
@@ -172,7 +172,7 @@
 											<label>Số điện thoại: </label>
 
 											<div class='d-inline-b'>
-												<input class='form-control' name='sdt' placeholder='Vui lòng điền số điện thoại' type='text' value=''/>
+												<input class='form-control' id='sdt' name='sdt' placeholder='Vui lòng điền số điện thoại' type='text' value=''/>
 											</div>
 										</div>
 									</div>
@@ -224,7 +224,7 @@
             <div class='form-group  '>
                 <label>Số nhà, phố, tổ dân phố/thôn/đội <em style='line-height: 1'>(*)</em>
                 </label>
-                <input class='form-control' name='sonha_pho' placeholder='Vui lòng điền số nhà, tổ khu phố' type='text' value=''/>
+                <input class='form-control' id='sonha_pho' name='sonha_pho' placeholder='Vui lòng điền số nhà, tổ khu phố' type='text' value=''/>
             </div>
         </div>
     </div>
@@ -267,7 +267,7 @@
                 <label> Tên Công trường, Phân xưởng, Khu vực làm việc <em style='line-height: 1'>(*)</em>
                 </label>
 
-                <input class='form-control' name='khuvuclamviec' placeholder='VD: Văn phòng Công ty, CT. Lào Cai, Khu vực Km6' type='text' value=''/>
+                <input class='form-control' id='khuvuclamviec' name='khuvuclamviec' placeholder='VD: Văn phòng Công ty, CT. Lào Cai, Khu vực Km6' type='text' value=''/>
             </div>
         </div>
     </div>
@@ -619,14 +619,35 @@
 					</div>
 			</div>
 			<div class='row '>
-			<div class='col-md-4  col-xs-12 '>
+				<div class='col-md-3  col-xs-12 '>
 					<div class='form-group  '>
-						<label>Thời gian <em style='line-height: 1'>(*)</em>
+						<label>Thời gian đi: <em style='line-height: 1'>(*)</em>
 						</label>
-						<input class='form-control' name='hanhtrinh1_thoigian' type='date' value=''/>
+						<input class='form-control' name='hanhtrinh1_thoigiandi' type='time' value=''/>
 					</div>
 				</div>
-				<div class='col-md-8  col-xs-12 '>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh1_ngaydi' type='date' value=''/>
+					</div>
+				</div>
+							<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Thời gian đến: <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh1_thoigiandien' type='time' value=''/>
+					</div>
+				</div>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh1_ngayden' type='date' value=''/>
+					</div>
+				</div>	
+			</div>
+			<div class='row '>
+				<div class='col-md-12  col-xs-12 '>
 					<div class='form-group  '>
 						<label>Nội dung <em style='line-height: 1'>(*)</em>
 						</label>
@@ -668,14 +689,35 @@
 					</div>
 			</div>
 			<div class='row '>
-			<div class='col-md-4  col-xs-12 '>
+				<div class='col-md-3  col-xs-12 '>
 					<div class='form-group  '>
-						<label>Thời gian <em style='line-height: 1'>(*)</em>
+						<label>Thời gian đi: <em style='line-height: 1'>(*)</em>
 						</label>
-						<input class='form-control' name='hanhtrinh2_thoigian' type='date' value=''/>
+						<input class='form-control' name='hanhtrinh2_thoigiandi' type='time' value=''/>
 					</div>
 				</div>
-				<div class='col-md-8  col-xs-12 '>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh2_ngaydi' type='date' value=''/>
+					</div>
+				</div>
+							<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Thời gian đến: <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh2_thoigiandien' type='time' value=''/>
+					</div>
+				</div>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh2_ngayden' type='date' value=''/>
+					</div>
+				</div>	
+			</div>
+			<div class='row '>
+				<div class='col-md-12  col-xs-12 '>
 					<div class='form-group  '>
 						<label>Nội dung <em style='line-height: 1'>(*)</em>
 						</label>
@@ -719,22 +761,43 @@
 					</div>
 				</div>
 		</div>
-		<div class='row '>
-		<div class='col-md-4  col-xs-12 '>
-				<div class='form-group  '>
-					<label>Thời gian <em style='line-height: 1'>(*)</em>
-					</label>
-					<input class='form-control' name='hanhtrinh3_thoigian' type='date' value=''/>
+			<div class='row '>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Thời gian đi: <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh3_thoigiandi' type='time' value=''/>
+					</div>
+				</div>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh3_ngaydi' type='date' value=''/>
+					</div>
+				</div>
+							<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Thời gian đến: <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh3_thoigiandien' type='time' value=''/>
+					</div>
+				</div>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh3_ngayden' type='date' value=''/>
+					</div>
+				</div>	
+			</div>
+			<div class='row '>
+				<div class='col-md-12  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Nội dung <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh3_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
+					</div>
 				</div>
 			</div>
-			<div class='col-md-8  col-xs-12 '>
-				<div class='form-group  '>
-					<label>Nội dung <em style='line-height: 1'>(*)</em>
-					</label>
-					<input class='form-control' name='hanhtrinh3_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
-				</div>
-			</div>
-		</div>
 		</div>
 		<div  class='row '>
 			<button type="button" class="themlichtrinh" onclick='Them_lichtrinh4()'id='themlichtrinh4'style="display:none">Thêm lịch trình</button>
@@ -771,22 +834,43 @@
 					</div>
 				</div>
 		</div>
-		<div class='row '>
-		<div class='col-md-4  col-xs-12 '>
-				<div class='form-group  '>
-					<label>Thời gian <em style='line-height: 1'>(*)</em>
-					</label>
-					<input class='form-control' id = 'date4' name='hanhtrinh4_thoigian' type='date' value=''/>
+			<div class='row '>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Thời gian đi: <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh4_thoigiandi' type='time' value=''/>
+					</div>
+				</div>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh4_ngaydi' type='date' value=''/>
+					</div>
+				</div>
+							<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Thời gian đến: <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh4_thoigiandien' type='time' value=''/>
+					</div>
+				</div>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh4_ngayden' type='date' value=''/>
+					</div>
+				</div>	
+			</div>
+			<div class='row '>
+				<div class='col-md-12  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Nội dung <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh4_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
+					</div>
 				</div>
 			</div>
-			<div class='col-md-8  col-xs-12 '>
-				<div class='form-group  '>
-					<label>Nội dung <em style='line-height: 1'>(*)</em>
-					</label>
-					<input class='form-control' name='hanhtrinh4_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
-				</div>
-			</div>
-		</div>
 		</div>
 		<div  class='row '>
 			<button type="button" class="themlichtrinh" onclick='Them_lichtrinh5()'id='themlichtrinh5'style="display:none">Thêm lịch trình</button>
@@ -823,22 +907,43 @@
 					</div>
 				</div>
 		</div>
-		<div class='row '>
-		<div class='col-md-4  col-xs-12 '>
-				<div class='form-group  '>
-					<label>Thời gian <em style='line-height: 1'>(*)</em>
-					</label>
-					<input class='form-control' name='hanhtrinh5_thoigian' type='date' value=''/>
+			<div class='row '>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Thời gian đi: <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh5_thoigiandi' type='time' value=''/>
+					</div>
+				</div>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh5_ngaydi' type='date' value=''/>
+					</div>
+				</div>
+							<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Thời gian đến: <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh5_thoigiandien' type='time' value=''/>
+					</div>
+				</div>
+				<div class='col-md-3  col-xs-12 '>
+					<div class='form-group  '>
+						<label><br></label>
+						<input class='form-control' name='hanhtrinh5_ngayden' type='date' value=''/>
+					</div>
+				</div>	
+			</div>
+			<div class='row '>
+				<div class='col-md-12  col-xs-12 '>
+					<div class='form-group  '>
+						<label>Nội dung <em style='line-height: 1'>(*)</em>
+						</label>
+						<input class='form-control' name='hanhtrinh5_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
+					</div>
 				</div>
 			</div>
-			<div class='col-md-8  col-xs-12 '>
-				<div class='form-group  '>
-					<label>Nội dung <em style='line-height: 1'>(*)</em>
-					</label>
-					<input class='form-control' name='hanhtrinh5_noidung' placeholder='Địa điểm đến, đối tượng tiếp xúc, phương tiện di chuyển' type='text' value=''/>
-				</div>
-			</div>
-		</div>
 		</div>
 		<div><br> </div>
 	<div style="text-align:center;color: #015ab4;">Trường hợp khẩn cấp, liên hệ Quân y Đơn vị (Đ/c Phòng - 0904.352.467)</div>			  
@@ -1277,6 +1382,37 @@ function Them_lichtrinh5(){
 	document.getElementById('lichtrinh5').style.display = 'block';
 	document.getElementById('themlichtrinh5').style.display = 'none';
 }
+function cleardata(){
+	document.getElementById('hovaten').value = '';
+	document.getElementById('bophan').value = '';
+	document.getElementById('namsinh').value = '';
+	document.getElementById('sdt').value = '';
+	document.getElementById('sonha_pho').value = ' ';
+	document.getElementById('khuvuclamviec').value = '';
+	document.getElementById('province').value = '';
+	document.getElementById('province0').value = '';
+	document.getElementById('province1').value = '';
+	document.getElementById('province2').value = '';
+	document.getElementById('province3').value = '';
+	document.getElementById('province4').value = '';
+	document.getElementById('province5').value = '';
+	document.getElementById('district').value = '';
+	document.getElementById('district0').value = '';	
+	document.getElementById('district1').value = '';	
+	document.getElementById('district2').value = '';
+	document.getElementById('district3').value = '';
+	document.getElementById('district4').value = '';
+	document.getElementById('district5').value = '';	
+	document.getElementById('ward').value = '';
+	document.getElementById('ward0').value = '';
+	document.getElementById('ward1').value = '';
+	document.getElementById('ward2').value = '';
+	document.getElementById('ward3').value = '';
+	document.getElementById('ward4').value = '';
+	document.getElementById('ward5').value = '';
+}
+
+
 		</script>
 		
 <script type="text/javascript">
@@ -1298,7 +1434,9 @@ function Them_lichtrinh5(){
                           {
                              alert('Khai báo y tế không thành công, vui long liên hệ Quân y đơn vị');
                           }else{
-                             alert('Đã khai báo y tế thành công!');
+							cleardata();
+                            alert('Đã khai báo y tế thành công!');
+							 
                           }
                }
     });
