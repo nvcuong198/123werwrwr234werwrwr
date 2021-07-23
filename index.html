@@ -12,7 +12,6 @@
 			src="https://code.jquery.com/jquery-2.2.4.js"
 			crossorigin="anonymous"></script>
 			<link as='style' href='https://tokhaiyte.vn/css/1.521656/2001432/3135/style.css?656' rel='preload'> </link>
-		<link as='style' href='https://tokhaiyte.vn/3rdparty/font-awesome-5.13.1/css/all.min.css' rel='preload'/>
 		<link href='https://tokhaiyte.vn/css/1.521656/2001432/3135/style.css?656' rel='stylesheet' type='text/css'/>
 	</head>
 		<body>
@@ -229,9 +228,9 @@
         </div>
     </div>
 
-    <div class='mb-20'>Địa chỉ làm việc 
+    <div class='mb-20' style="display:none">Địa chỉ làm việc 
     </div>
-<div class='row '>
+<div class='row 'style="display:none">
 				<div class='col-md-4 col-sm-4  col-xs-12 '>
 					<div class='form-group  '>
 						<label>Tỉnh thành <em style='line-height: 1'>(*)</em>
@@ -261,7 +260,7 @@
 				</div>
 			</div>
     </div>
-    <div class='row '>
+    <div class='row 'style="display:none">
         <div class='   col-xs-12 '>
             <div class='form-group  '>
                 <label> Tên Công trường, Phân xưởng, Khu vực làm việc <em style='line-height: 1'>(*)</em>
@@ -272,101 +271,12 @@
         </div>
     </div>
 
-
     <div class='row '>
         <div class='   col-xs-12 '>
             <table class='table table-bordered tableData2'>
                 <thead>
                     <tr>
-                        <th scope='col'>Yếu tố phơi nhiễm: Trong vòng 14 ngày qua:</th>
-
-                        <th class='text-center' scope='col' style='width:100px;'>Có</th>
-                        <th class='text-center' scope='col' style='width:100px;'>Không</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Gia đình, người thân, bạn bè có ai bị hoặc nghi ngờ vì COVID-19 (đang bị cách ly, theo dõi) không? <span class='text-required'>(*)</span>
-                          <br> </br>
-                            <label class='error' for='yeutophoinhiem_giadinhbinghingocovid19'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='yeutophoinhiem_giadinhbinghingocovid19' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='yeutophoinhiem_giadinhbinghingocovid19' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Gia đình có ai vừa ở nước ngoài về không?
-                            <span class='text-required'>(*)</span>
-                          <br> </br>
-                            <label class='error' for='yeutophoinhiem_nuocngoai'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='yeutophoinhiem_nuocngoai' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='yeutophoinhiem_nuocngoai' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Có trực tiếp chăm sóc, phục vụ hoặc tiếp xúc với người bị nhiễm bệnh truyền nhiễm (có sốt), hoặc đang được cách ly điều trị do bị nhiễm hoặc nghi ngờ bị nhiễm COVID-19 ?
-                            <span class='text-required'>(*)</span>
-                          <br> </br>
-                            <label class='error' for='yeutophoinhiem_chamsoc'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='yeutophoinhiem_chamsoc' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='yeutophoinhiem_chamsoc' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Có đi đến địa phương có dịch COVID-19 không? <span class='text-required'>(*)</span>
-                            <label class='error' for='yeutophoinhiem_diaphuongcovid19'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='yeutophoinhiem_diaphuongcovid19' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='yeutophoinhiem_diaphuongcovid19' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Có sử dụng phương tiện giao thông công cộng (máy bay, tàu hỏa, xe khách) không? <span class='text-required'>(*)</span>
-                            <label class='error' for='yeutophoinhiem_giaothong'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='yeutophoinhiem_giaothong' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='yeutophoinhiem_giaothong' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Đến trang trại chăn nuôi/ chợ buôn bán động vật sống/ cơ sở giết mổ động vật/ tiếp xúc động vật, hoặc có ăn thịt động vật hoang dã? <span class='text-required'>(*)</span>
-                            <label class='error' for='yeutophoinhiem_trangtrai'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='yeutophoinhiem_trangtrai' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='yeutophoinhiem_trangtrai' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class='row '>
-        <div class='   col-xs-12 '>
-            <table class='table table-bordered tableData2'>
-                <thead>
-                    <tr>
-                        <th scope='col'>Trong vòng 14 ngày (tính đến hôm nay) có TRIỆU CHỨNG nào sau đây:</th>
+                        <th scope='col'>Trong vòng 7 ngày (tính đến hôm nay) có TRIỆU CHỨNG nào sau đây:</th>
 
                         <th class='text-center' scope='col' style='width:100px;'>Có</th>
                         <th class='text-center' scope='col' style='width:100px;'>Không</th>
@@ -417,162 +327,13 @@
                             <input checked='' class='style-radio' name='14ngaydauhong' type='Radio' value='Không'/>
                         </td>
                     </tr>
-                    <tr>
-                        <td>Nôn/ Buồn nôn <span class='text-required'>(*)</span>
-                            <label class='error' for='14ngaybuonnon'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='14ngaybuonnon' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='14ngaybuonnon' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Tiêu chảy <span class='text-required'>(*)</span>
-                            <label class='error' for='14ngaytieuchay'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='14ngaytieuchay' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='14ngaytieuchay' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Xuất huyết ngoài da <span class='text-required'>(*)</span>
-                            <label class='error' for='14ngayxuathuyet'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='14ngayxuathuyet' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='14ngayxuathuyet' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <td>Nổi ban ngoài da <span class='text-required'>(*)</span>
-                        <label class='error' for='14ngaynoiban'/>
-                    </td>
-                    <td class='text-center'>
-                        <input class='style-radio' name='14ngaynoiban' type='Radio' value='Có'/>
-                    </td>
-                    <td class='text-center'>
-                        <input checked='' class='style-radio' name='14ngaynoiban' type='Radio' value='Không'/>
-                    </td>
+                     
 
                 </tbody>
             </table>
         </div>
     </div>
 
-    <div class='row '>
-        <div class='   col-xs-12 '>
-            <table class='table table-bordered tableData2'>
-                <thead>
-                    <tr>
-                        <th scope='col'>Tiền sử bệnh tật:</th>
-
-                        <th class='text-center' scope='col' style='width:100px;'>Có</th>
-                        <th class='text-center' scope='col' style='width:100px;'>Không</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tiểu đường <span class='text-required'>(*)</span>
-                            <label class='error' for='benhtat_tieuduong'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='benhtat_tieuduong' type='Radio' value='Có'> </input>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='benhtat_tieuduong' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Bệnh lý tim mạch <span class='text-required'>(*)</span>
-                            <label class='error' for='benhtat_tim'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='benhtat_tim' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='benhtat_tim' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>RL chuyển hóa Lipid <span class='text-required'>(*)</span>
-                            <label class='error' for='benhtat_lipid'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='benhtat_lipid' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='benhtat_lipid' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Bệnh phổi tắc nghẽn MT<span class='text-required'>(*)</span>
-
-                            <label class='error' for='benhtat_phoitacnghen'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='benhtat_phoitacnghen' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='benhtat_phoitacnghen' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lao/Hen/Viêm phế quản <span class='text-required'>(*)</span>
-
-                            <label class='error' for='benhtat_laohen'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='benhtat_laohen' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='benhtat_laohen' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Bệnh lý thận/gan/mật <span class='text-required'>(*)</span>
-
-                            <label class='error' for='benhtat_ganmat'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='benhtat_ganmat' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='benhtat_ganmat' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Ung thư <span class='text-required'>(*)</span>
-
-                            <label class='error' for='benhtat_ungthu'/>
-                        </td>
-                        <td class='text-center'>
-                            <input class='style-radio' name='benhtat_ungthu' type='Radio' value='Có'/>
-                        </td>
-                        <td class='text-center'>
-                            <input checked='' class='style-radio' name='benhtat_ungthu' type='Radio' value='Không'/>
-                        </td>
-                    </tr>
-                    <td>Bệnh lý khác <span class='text-required'>(*)</span>
-
-                        <label class='error' for='benhtat_khac'/>
-                    </td>
-                    <td class='text-center'>
-                        <input class='style-radio' name='benhtat_khac' type='Radio' value='Có'/>
-                    </td>
-                    <td class='text-center'>
-                        <input checked='' class='style-radio' name='benhtat_khac' type='Radio' value='Không'/>
-                    </td>
-
-                </tbody>
-            </table>
-        </div>
-    </div>
 	  <div class='mb-20'><b>Kê khai hành trình</b></div>
 	   <div style='color:red;'>Chú ý: Các đồng chí ở nội trú, không ra khỏi đơn vị tích "Nội trú", không phải kê khai bảng hành trình; các đồng chí ở ngoại trú, nghỉ tranh thủ, nghỉ phép, nghỉ việc riêng, đi công tác, ở nội trú nhưng đi ra khởi đơn vị có việc thì tích vào ô "Ngoại trú" và thực hiện kê khai hành trình</div>
 	                     <br>
@@ -651,7 +412,7 @@
 					<div class='form-group  '>
 						<label>Nội dung <em style='line-height: 1'>(*)</em>
 						</label>
-						<input class='form-control' name='hanhtrinh1_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
+						<input class='form-control' name='hanhtrinh1_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, đối tượng tiếp xúc, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Tiếp xúc gia đình; Xe oto BKS: 14A89899)' type='text' value=''/>
 					</div>
 				</div>
 			</div>
@@ -721,7 +482,7 @@
 					<div class='form-group  '>
 						<label>Nội dung <em style='line-height: 1'>(*)</em>
 						</label>
-						<input class='form-control' name='hanhtrinh2_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
+						<input class='form-control' name='hanhtrinh2_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, đối tượng tiếp xúc, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Tiếp xúc gia đình; Xe oto BKS: 14A89899)' type='text' value=''/>
 					</div>
 				</div>
 			</div>
@@ -794,7 +555,7 @@
 					<div class='form-group  '>
 						<label>Nội dung <em style='line-height: 1'>(*)</em>
 						</label>
-						<input class='form-control' name='hanhtrinh3_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
+						<input class='form-control' name='hanhtrinh3_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, đối tượng tiếp xúc, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Tiếp xúc gia đình; Xe oto BKS: 14A89899)' type='text' value=''/>
 					</div>
 				</div>
 			</div>
@@ -867,7 +628,7 @@
 					<div class='form-group  '>
 						<label>Nội dung <em style='line-height: 1'>(*)</em>
 						</label>
-						<input class='form-control' name='hanhtrinh4_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
+						<input class='form-control' name='hanhtrinh4_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, đối tượng tiếp xúc, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Tiếp xúc gia đình; Xe oto BKS: 14A89899)' type='text' value=''/>
 					</div>
 				</div>
 			</div>
@@ -940,7 +701,7 @@
 					<div class='form-group  '>
 						<label>Nội dung <em style='line-height: 1'>(*)</em>
 						</label>
-						<input class='form-control' name='hanhtrinh5_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Xe oto BKS: 14A89899)' type='text' value=''/>
+						<input class='form-control' name='hanhtrinh5_noidung' placeholder='Ghi rõ Địa chỉ cụ thể, đối tượng tiếp xúc, phương tiện đi lại (VD: Số 23, Đường Trần Phú; Tiếp xúc gia đình; Xe oto BKS: 14A89899)' type='text' value=''/>
 					</div>
 				</div>
 			</div>
@@ -957,7 +718,7 @@
 <div class='btn-submit-box text-center'>
 <button class='btn btn-success' type='submit'>Gửi tờ khai</button>
 </div>
-
+<div style="text-align:center;color: #015ab4;display: none" id="khaibaoytekhongthanhcong">Khai báo y tế không thành công! Vui lòng nhập đầy đủ thông tin cá nhân.</div>	
 			</div>
 			</form>
 		<script >
@@ -1419,10 +1180,17 @@ function cleardata(){
  $(document).ready(function()
  { 
    var submit = $("button[type='submit']");
+
    submit.click(function()
                {
-                  var data = $('form').serialize();
-                  $.ajax({
+			      var data = $('form').serialize();
+			 if(document.getElementById('hovaten').value == '' || document.getElementById('bophan').value == '' || document.getElementById('namsinh').value == '')
+					{
+					alert('Lỗi! Vui lòng nhập đầy đủ thông tin cá nhân!');
+				  }
+				  else{
+
+					$.ajax({		  
                             type : 'GET', 
                             url : 'https://script.google.com/macros/s/AKfycbziw5CKpbzeMxRvY-DgLuQE-KO6dZ7GjzZmHPLZRVl9O6jtYubkAdy8h9wP9h_yx6gj/exec',
                             dataType:'json',
@@ -1430,17 +1198,17 @@ function cleardata(){
                             data : data,
                             success : function(data)
                           { 
-                  if(data == 'false') 
+					if(data == 'false') 
                           {
                              alert('Khai báo y tế không thành công, vui long liên hệ Quân y đơn vị');
                           }else{
-							cleardata();
-                            alert('Đã khai báo y tế thành công!');
-							 
+                           if(!alert('Khai báo y tế thành công!')){window.location.reload();}
                           }
-               }
-    });
-    return false;
+						   }
+					});
+				  }
+
+				return false; 
    });
  });
 </script>
